@@ -1,0 +1,30 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "D:\\Program Files\\mingw64-posix\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                // "${file}",
+                "G:/memoryPool/v1/test/UnitTest.cpp",               // 测试文件
+                "G:/memoryPool/v1/src/MemoryPool.cpp",           // MemoryPool 源文件
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",  // 输出可执行文件
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
